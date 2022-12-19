@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@200;300;400&display=swap');
+/*Aceder a los root desde cualquier elemento*/
+
+body{
+    font-family: 'Baskervville', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.Encabezado{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: contents;
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+    
+   
+
+}
+/*Estilo para el efecto del encavezado*/
+.Encabezado::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-image: url(../Imagenes/Verde.jpg),linear-gradient(180deg, #0000008c, 0%,#0000008c 100%);
+   background-size: cover;
+   clip-path: polygon(0 0, 100% 0, 100% 31%, 50% 46%, 0 31%);
+   z-index: -1;
+}
+/*Navegacion*/
+.nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{/**/
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    color: white;
+    
+}
+.tituloNav2{
+    margin-top: -2em;
+    text-align: center;
+    color: #F695E6;
+}
+.menu{
+    
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    justify-content: end;
+}
+
+.menu{
+    color:#F695E6 ;
+    text-decoration: none;
+
+}
+
+.items{
+    list-style: none;
+   
+}
+.items:hover{
+    background-color: white;  
+}
+.menu:hover{
+    color:#95F6A5;
+}
+.InicioContenedor{
+    text-align: center;
+    font-size: 24px;
+}
+.Inicio1{
+    font-size: 3em;
+    color: #FAD3F4 ;
+}
+
+/*Main*/
+
+
+
+.FormularioContac{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 73px;
+    box-shadow: 0 0 20px 1px #E9D3FA;
+    position: relative;
+}
+
+.Formulario_Titulo{
+    text-align: center;
+    margin-top: 0;
+
+}
+/*Animacion en el input y label en el formulario de contacto*/
+.Input, .Label, .Submit{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.Input{
+    padding: 20px;
+    border: 1px solid #7A7579;
+    margin-bottom: 40px;
+    background:rgba(248, 215, 244, 0.1);
+    border-color: #f596e7;
+}
+
+.Input:focus+ .Label{
+    margin-top: -135px;
+}
+    
+.Label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+.Submit{
+    background: #F9FFEC;
+    color: #f596e7;
+    border-color: #F9FFEC;
+    padding: 9px 18px;
+    cursor: pointer;
+    border: none;
+}
+/*footer*/
+.footer{
+    background-color: #EBFDEE;
+ }
+ 
+.Nosotros{
+     display: flex;
+     border-bottom: 2px solid #FAD3F4;
+     padding: 36px;
+     flex-wrap: wrap;
+ }
+.FooterDiv2{
+    margin-top: 2em;
+    margin-left: 36em;
+}
+.FooterDiv2 h3{
+   
+    font-size: 25px;
+    height: 34px;
+}
+.redesSociales{
+   margin-left: 4px;
+}
+.Logo-de-Afrodita{
+    width: 12em;
+    margin-left: 36em;
+}
+
+.footer__copyright{
+    font-size: 12px;
+    margin-left: 49em;
+}
+.fijar{
+    margin-top: -135px;
+}
+
+/*Pagina responsiva */
+
+@media screen and (max-width: 480px){
+    .contenedor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        -webkit-text-stroke: thick;
+    }
+    .items{
+        text-align: center;
+    }
+    .Inicio1{
+        font-size: 2em;
+    }
+    .FormularioContac{
+        width: 53%;
+    }
+    .FooterDiv2{
+        margin-left: 50%;
+        margin-top: -14px;
+    }
+    .FooterDiv2{
+        font-size: 11px;
+    }
+    .Logo-de-Afrodita{
+        margin-left: 40%;
+    }
+    .Listas{
+        font-size:13px;
+    }
+    .Trabajadores{
+        font-size: 6px;
+    }
+    
+}

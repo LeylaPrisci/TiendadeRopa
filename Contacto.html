@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrodita Moda</title>
+    <link rel="shortcut icon" href="Imagenes/favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Css/contacto.css">
+</head>
+<body>
+    <header class="Encabezado">
+        <nav class="contenedor">
+            <div class="logo">
+                <h1 class="tituloNav">AFRODITA</h1>
+                <h6 class="tituloNav2">Tendencia de Moda</h6>
+            </div>
+            <ul class="menu">
+                <li class="items">
+                        <a href="Index.html" class="menu">Home</a>
+                    
+                </li>
+                <li class="items">
+                    <a href="Producto.html" class="menu">Productos</a>
+                </li>
+                <li class="items">
+                    <a href="Contacto.html" class="menu">Contacto</a>
+                    
+                </li>
+                
+            </ul>
+            
+        </nav>
+        <section class="InicioContenedor">
+            <h1 class="Inicio1">Contacto</h1>
+           
+        </section>    
+    </header>
+    <main>
+        <form action="" class="FormularioContac" onsubmit="return validar();">
+            <h1 class="Formulario_Titulo">Contactenos</h1>
+
+            <input type="text" class="Input" id="Apellido">
+            <label for="" class="Label">Apellido</label>
+
+            <input type="text" class="Input" id="Nombre">
+            <label for="" class="Label">Nombre</label>
+
+            <input type="email" class="Input" id="Email">
+            <label for="" class="Label">E-mail</label>
+
+            <input type="text" class="Input" id="Telefono">
+            <label for="" class="Label">Telefono</label>
+
+            <input type="text" id="mensaje" class="Input">
+            <label for="" class="Label">Mensaje</label>
+
+            <input type="submit" class="Submit">
+        </form>
+        <h2 class="Listas">Listas del empleados de Afrodita </h2>
+        <p class="Trabajadores"></p>
+    </main>
+    <footer class="footer">
+        <selection class="Nosotros">
+           <div class="FooterDiv2">
+            <h3>Seguinos</h3>
+            <a href="#" class="redesSociales"><img src="Imagenes/ImagenesSvg/facebook.svg" class="redesSociales"></a>
+            <a href="#" class="redesSociales"><img src="Imagenes/ImagenesSvg/Instagram.svg" class="redesSociales"></a>
+            <a href="#" class="redesSociales"><img src="Imagenes/ImagenesSvg/twitter.svg" class="redesSociales"></a>
+           </div>
+        </selection>
+        <section>
+            <img src="Imagenes/logo-modified.png" alt="Logo-de-Afrodita" class="Logo-de-Afrodita">
+            <h3 class="footer__copyright">Derechos reservados &copy; Afrodita</h3>
+        </section>
+       
+        
+    </footer>
+    <script src="js/Formulario.js"></script>
+    <script src="js/Almacenamiento.js"></script>
+    
+    <!--Trabajadores.js se utilizo para consumir api-->
+    <script src="js/trabajadores.js"></script>
+</body>
+</html>
